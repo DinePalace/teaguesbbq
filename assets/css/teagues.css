@@ -256,3 +256,13 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; line-height
 .gallery-strip { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.5rem; margin-top: 2.2rem; }
 .gallery-strip img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; }
 @media (max-width: 720px) { .gallery-strip { grid-template-columns: repeat(3, 1fr); } }
+.food-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin-top: 2.2rem; }
+.food-gallery figure { margin: 0; overflow: hidden; border-radius: 12px; background: var(--char); }
+.food-gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; transition: transform 0.5s var(--ease); }
+.food-gallery figure:hover img { transform: scale(1.06); }
+@media (max-width: 600px) { .food-gallery { grid-template-columns: repeat(2, 1fr); } }
+.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+.team-grid figure { margin: 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); background: var(--char); }
+.team-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+.team-grid figcaption { padding: 0.85rem 1.1rem; font-weight: 700; color: var(--muted); font-size: 0.9rem; background: var(--paper-hi); }
+@media (max-width: 640px) { .team-grid { grid-template-columns: 1fr; } }
