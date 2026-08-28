@@ -1,100 +1,2135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Catering · Teague's BBQ, Spring TX</title>
-<meta name="description" content="Barbecue catering in Spring &amp; Houston since 1989 — Entrees, Sides, Breads, Desserts, Drinks and Specialty Items for any size event.">
-<link rel="canonical" href="https://www.teaguesbbq.com/catering/">
-<meta property="og:type" content="restaurant"><meta property="og:title" content="Catering · Teague's BBQ, Spring TX">
-<meta property="og:description" content="Barbecue catering in Spring &amp; Houston since 1989 — Entrees, Sides, Breads, Desserts, Drinks and Specialty Items for any size event."><meta property="og:url" content="https://www.teaguesbbq.com/catering/">
-<meta property="og:image" content="https://www.teaguesbbq.com/assets/images/plate.jpg"><meta name="twitter:card" content="summary_large_image">
-<meta name="format-detection" content="telephone=no">
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta name="robots" content="index,follow">
-<meta name="geo.region" content="US-TX"><meta name="geo.placename" content="Spring, Texas">
-<meta name="theme-color" content="#17110d">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="/assets/css/teagues.css">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarbecueRestaurant","name":"Teague's BBQ","url":"https://www.teaguesbbq.com","telephone":"+18322468552","priceRange":"$$","servesCuisine":["Barbecue","American","Texas"],"address":{"@type":"PostalAddress","streetAddress":"3307 Spring Stuebner Road, Suite B","addressLocality":"Spring","addressRegion":"TX","postalCode":"77389","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"11:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"18:00"}],"sameAs":["https://www.facebook.com/teaguesbbq/","https://instagram.com/teaguesbbq/"]}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Catering | Teague's BBQ — Texas Smoke &amp; Cajun Soul</title>
+  <link rel="canonical" href="https://www.teaguesbbq.com/catering/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Teague's BBQ catering in Spring, TX. Authentic Texas smoke meets Cajun soul — 16-hour briskets, étouffée, seafood boils and more. Build your custom catering quote today.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Catering | Teague's BBQ — Texas Smoke &amp; Cajun Soul">
+  <meta property="og:description" content="From backyard parties to weddings — pit-smoked Texas BBQ and Cajun favorites, catered your way across Spring, TX. Get your free custom quote.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment", 
+    "name": "Teague's BBQ",
+    "servesCuisine": ["Barbecue", "Cajun", "Southern"],
+    "telephone": "+1-832-606-3789",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Spring",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Spring TX", "The Woodlands TX", "Klein TX", "Tomball TX", "Conroe TX", "North Houston TX"],
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "BBQ and Cajun Event Catering",
+        "description": "Full-service, drop-off, delivery, and pickup catering for weddings, corporate events, church gatherings, and family celebrations."
+      }
+    }
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg-deep: #14100c;          /* smoky charcoal-brown */
+      --surface: #1e1712;          /* smoked oak */
+      --surface-2: #271e17;
+      --card: rgba(46, 35, 26, 0.85);
+      --ember: #d94f22;            /* deep burnt red-orange */
+      --ember-dark: #b53f19;
+      --gold: #e0b077;             /* subtle gold */
+      --cream: #f7efe3;
+      --cream-paper: #f4ead9;
+      --text-muted: #cfc3b2;
+      --line: rgba(224, 176, 119, 0.22);
+      --shadow-xl: 0 25px 45px -12px rgba(0,0,0,0.65);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg-deep);
+      font-family: 'Inter', sans-serif;
+      color: var(--cream);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+    .section-eyebrow {
+      text-align: center;
+      letter-spacing: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 2.9rem);
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 0.6rem;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 2.4rem;
+      font-size: 1rem;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+
+    /* ============ HEADER ============ */
+    .site-header {
+      background: rgba(16, 12, 9, 0.96);
+      backdrop-filter: blur(14px);
+      padding: 0.85rem 2rem;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 300;
+    }
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .logo h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background: linear-gradient(135deg, #fff, var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      white-space: nowrap;
+    }
+    .logo span { color: var(--ember); background: none; -webkit-text-fill-color: var(--ember); }
+    .nav-links { display: flex; gap: 1.6rem; list-style: none; align-items: center; flex-wrap: wrap; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--cream);
+      font-weight: 500;
+      font-size: 0.92rem;
+      transition: color 0.25s;
+      padding: 0.4rem 0;
+    }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--ember); }
+    .nav-cta {
+      background: var(--ember);
+      color: #fff !important;
+      padding: 0.55rem 1.4rem !important;
+      border-radius: 60px;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(217,79,34,0.35);
+      transition: background 0.25s, transform 0.25s;
+    }
+    .nav-cta:hover { background: var(--ember-dark); transform: translateY(-1px); color: #fff !important; }
+    @media (max-width: 820px) {
+      .nav-container { flex-direction: column; gap: 0.6rem; }
+      .nav-links { justify-content: center; gap: 1rem; }
+      .container { padding: 0 1.2rem; }
+    }
+
+    /* ============ HERO ============ */
+    .hero-section {
+      background:
+        radial-gradient(ellipse 80% 60% at 15% 0%, rgba(217,79,34,0.10), transparent 60%),
+        var(--surface);
+      padding: 3.2rem 2rem 3.6rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      max-width: 1280px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .twist-badge {
+      background: rgba(217,79,34,0.14);
+      border: 1px solid rgba(217,79,34,0.45);
+      color: var(--gold);
+      display: inline-block;
+      padding: 0.42rem 1.5rem;
+      border-radius: 60px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      margin-bottom: 1.3rem;
+      text-transform: uppercase;
+    }
+    .hero-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 5vw, 4rem);
+      line-height: 1.08;
+      font-weight: 700;
+      margin-bottom: 1.1rem;
+    }
+    .hero-content h2 span { color: var(--ember); }
+    .hero-desc {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+    .hero-actions { display: flex; gap: 0.9rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      border: none;
+      padding: 0.95rem 2.2rem;
+      border-radius: 60px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.25s, background 0.25s, box-shadow 0.25s;
+      min-height: 48px;
+    }
+    .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .btn-primary {
+      background: var(--ember);
+      color: #fff;
+      box-shadow: 0 8px 22px rgba(217,79,34,0.4);
+    }
+    .btn-primary:hover { background: var(--ember-dark); transform: translateY(-2px); }
+    .btn-ghost {
+      background: transparent;
+      border: 1.5px solid var(--line);
+      color: var(--cream);
+    }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Hero trust strip */
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1.6rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .hero-trust span { display: inline-flex; align-items: center; gap: 7px; }
+    .hero-trust i { color: var(--gold); }
+
+    .hero-carousel {
+      border-radius: 34px;
+      overflow: hidden;
+      box-shadow: var(--shadow-xl);
+      background: var(--surface-2);
+      height: 400px;
+      position: relative;
+      border: 1px solid var(--line);
+    }
+    .carousel-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: transform;
+    }
+    .carousel-slide { min-width: 100%; height: 100%; }
+    .carousel-slide img { width: 100%; height: 100%; object-fit: cover; }
+    .carousel-controls {
+      position: absolute;
+      bottom: 16px; left: 0; right: 0;
+      display: flex; justify-content: center; gap: 0.7rem;
+      z-index: 10;
+    }
+    .carousel-dot {
+      width: 12px; height: 12px;
+      background: rgba(255,255,240,0.4);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.2s;
+      border: none;
+      padding: 0;
+    }
+    .carousel-dot.active-dot { background: var(--ember); width: 28px; border-radius: 20px; }
+    @media (max-width: 950px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-carousel { height: 320px; }
+    }
+    @media (max-width: 600px) {
+      .hero-section { padding: 2.2rem 1.2rem 2.6rem; }
+      .hero-actions .btn { width: 100%; }
+    }
+
+    /* ============ INTRO ============ */
+    .menu-intro { background: var(--bg-deep); padding: 3.5rem 0; border-bottom: 1px solid var(--line); }
+    .intro-grid { display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: stretch; }
+    .intro-text { flex: 1.2; min-width: 300px; }
+    .intro-text h3 {
+      font-size: 2.3rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #fff, var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .intro-text p { color: var(--text-muted); margin-bottom: 1rem; }
+    .intro-text strong { color: var(--cream); }
+    .contact-highlight {
+      background: rgba(217,79,34,0.12);
+      padding: 1rem 1.5rem;
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--ember);
+      margin-top: 1.2rem;
+      font-size: 0.95rem;
+    }
+    .contact-highlight a { color: var(--gold); font-weight: 700; text-decoration: none; }
+    .intro-stats {
+      flex: 0.8;
+      min-width: 260px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.1rem;
+    }
+    .intro-stats div { display: flex; align-items: center; gap: 12px; font-weight: 500; }
+    .intro-stats i { color: var(--ember); width: 22px; text-align: center; }
+
+    /* ============ HOW IT WORKS ============ */
+    .how-section { padding: 4rem 0; background: var(--surface); border-bottom: 1px solid var(--line); }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.6rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .step-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.6rem;
+      text-align: center;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .step-card:hover { transform: translateY(-5px); border-color: var(--ember); }
+    .step-num {
+      width: 54px; height: 54px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      background: var(--ember);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      box-shadow: 0 6px 16px rgba(217,79,34,0.4);
+    }
+    .step-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .step-card p { color: var(--text-muted); font-size: 0.92rem; }
+    @media (max-width: 780px) { .steps-grid { grid-template-columns: 1fr; max-width: 420px; } }
+
+    /* ============ TABS + MENU ============ */
+    .tabs-wrapper {
+      background: rgba(16, 12, 9, 0.97);
+      position: sticky;
+      top: 64px;
+      z-index: 90;
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .tabs-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.9rem 0;
+    }
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 0.65rem 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 50px;
+      transition: 0.2s;
+      min-height: 44px;
+    }
+    .tab-btn i { margin-right: 8px; }
+    .tab-btn:hover { color: var(--cream); border-color: var(--line); }
+    .tab-btn.active { background: var(--ember); color: #fff; box-shadow: 0 4px 12px rgba(217,79,34,0.4); }
+    @media (max-width: 820px) { .tabs-wrapper { top: 118px; } }
+
+    .menu-section { display: none; animation: fadeUp 0.4s ease; padding: 3rem 0 2rem; }
+    .menu-section.active-section { display: block; }
+    .menu-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      text-align: center;
+      font-weight: 700;
+      margin: 0.4rem 0 0.2rem;
+    }
+    .grid-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .food-card {
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+    .food-card:hover { transform: translateY(-5px); border-color: var(--ember); box-shadow: var(--shadow-xl); }
+    .card-icon {
+      background: linear-gradient(145deg, #33271d, var(--surface-2));
+      padding: 1.7rem 0.5rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid var(--ember);
+    }
+    .card-icon i { font-size: 2.7rem; color: var(--ember); filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3)); }
+    .card-badge {
+      display: inline-block;
+      background: var(--ember);
+      color: #fff;
+      padding: 0.25rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.63rem;
+      font-weight: 800;
+      margin-top: 0.7rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .card-content { padding: 1.3rem; text-align: center; }
+    .card-content h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; margin-bottom: 0.35rem; }
+    .card-content p { color: var(--text-muted); font-size: 0.9rem; }
+    .price-note { font-size: 0.7rem; color: var(--gold); margin-top: 0.6rem; letter-spacing: 1px; }
+    .special-request {
+      background: rgba(217,79,34,0.12);
+      border: 1px dashed rgba(217,79,34,0.5);
+      padding: 1.1rem 1.4rem;
+      border-radius: var(--radius-md);
+      text-align: center;
+      font-weight: 500;
+      margin-top: 2.2rem;
+    }
+
+    /* ============ EVENTS SECTION ============ */
+    .events-section { padding: 4rem 0; background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+    .event-chip {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 0.8rem;
+      text-align: center;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+    .event-chip:hover { transform: translateY(-4px); border-color: var(--gold); }
+    .event-chip i { font-size: 1.8rem; color: var(--gold); margin-bottom: 0.7rem; display: block; }
+    .event-chip span { font-weight: 600; font-size: 0.9rem; }
+
+    /* ============ WHY CHOOSE ============ */
+    .why-section { padding: 4rem 0; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.4rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .why-item {
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 1.3rem 1.4rem;
+    }
+    .why-item i { color: var(--ember); font-size: 1.2rem; margin-top: 0.2rem; }
+    .why-item p { font-size: 0.93rem; color: var(--text-muted); }
+    .why-item strong { color: var(--cream); display: block; margin-bottom: 0.15rem; font-size: 0.98rem; }
+
+    /* ============ TESTIMONIALS ============ */
+    .testimonial-section { padding: 4rem 0; background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 2.4rem auto 0;
+    }
+    .testimonial-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.9rem 1.7rem;
+      position: relative;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+    .testimonial-card:hover { transform: translateY(-4px); border-color: var(--gold); }
+    .testimonial-card .quote-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.4rem;
+      color: var(--ember);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .testimonial-card blockquote {
+      font-size: 0.96rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 1.1rem;
+    }
+    .testimonial-card cite {
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      color: var(--cream);
+      font-size: 0.9rem;
+    }
+    .testimonial-card .stars { color: var(--gold); font-size: 0.8rem; margin-bottom: 0.6rem; letter-spacing: 2px; }
+    .testimonial-card cite span { display: block; font-weight: 400; color: var(--gold); font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+
+    /* ============ FAQ ============ */
+    .faq-section { padding: 4rem 0; }
+    .faq-list { max-width: 820px; margin: 2.2rem auto 0; display: flex; flex-direction: column; gap: 0.8rem; }
+    .faq-item {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 0.25s;
+    }
+    .faq-item[open] { border-color: var(--ember); }
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 1.15rem 1.4rem;
+      font-weight: 600;
+      font-size: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      min-height: 48px;
+      user-select: none;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '\f078';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: var(--gold);
+      font-size: 0.8rem;
+      transition: transform 0.25s;
+      flex-shrink: 0;
+    }
+    .faq-item[open] summary::after { transform: rotate(180deg); }
+    .faq-item summary:hover { color: var(--gold); }
+    .faq-item summary:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px; }
+    .faq-answer { padding: 0 1.4rem 1.2rem; color: var(--text-muted); font-size: 0.93rem; }
+    .faq-answer a { color: var(--gold); font-weight: 600; text-decoration: none; }
+
+    /* ============ QUOTE CALCULATOR ============ */
+    .quote-section {
+      padding: 4.5rem 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 85% 10%, rgba(224,176,119,0.07), transparent 60%),
+        var(--surface);
+      border-top: 1px solid var(--line);
+    }
+    .quote-shell {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 2.2rem;
+      align-items: start;
+      margin-top: 2.5rem;
+    }
+    .quote-form {
+      background: var(--bg-deep);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-xl);
+    }
+    .form-block { margin-bottom: 2.2rem; }
+    .form-block:last-of-type { margin-bottom: 0; }
+    .form-block-title {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .form-block-title i { color: var(--ember); font-size: 1.1rem; }
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .field-row.single { grid-template-columns: 1fr; }
+    .field label {
+      display: block;
+      margin-bottom: 0.45rem;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--cream);
+    }
+    .field .optional { color: var(--text-muted); font-weight: 400; font-size: 0.78rem; }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      min-height: 48px;
+      transition: border-color 0.2s;
+    }
+    .field textarea { min-height: 100px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      outline: none;
+      border-color: var(--ember);
+    }
+    .field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23e0b077' stroke-width='2' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; }
+    .chip-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-bottom: 1rem;
+    }
+    .chip-group-label { font-weight: 600; font-size: 0.85rem; margin-bottom: 0.55rem; display: block; }
+    .chip {
+      position: relative;
+    }
+    .chip input { position: absolute; opacity: 0; pointer-events: none; }
+    .chip label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.55rem 1.1rem;
+      border-radius: 50px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      font-size: 0.86rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: 0.2s;
+      min-height: 42px;
+      user-select: none;
+    }
+    .chip label:hover { border-color: var(--gold); color: var(--cream); }
+    .chip input:checked + label {
+      background: var(--ember);
+      border-color: var(--ember);
+      color: #fff;
+      font-weight: 600;
+    }
+    .chip input:focus-visible + label { outline: 3px solid var(--gold); outline-offset: 2px; }
+    .chip input:disabled + label { opacity: 0.4; cursor: not-allowed; }
+    .chip input:disabled + label:hover { border-color: var(--line); color: var(--text-muted); }
+    .radio-row { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+    .hint-note { font-size: 0.78rem; color: var(--gold); margin: -0.4rem 0 1rem; }
+
+    /* Summary ticket */
+    .quote-ticket-wrap { position: sticky; top: 140px; }
+    .quote-ticket {
+      background: var(--cream-paper);
+      color: #2b2118;
+      border-radius: 22px;
+      padding: 2rem 1.8rem;
+      box-shadow: var(--shadow-xl);
+      position: relative;
+    }
+    .quote-ticket::before, .quote-ticket::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 12px;
+      background-image: radial-gradient(circle at 8px -2px, transparent 7px, var(--cream-paper) 7.5px);
+      background-size: 16px 12px;
+    }
+    .quote-ticket::before { top: -10px; transform: rotate(180deg); }
+    .quote-ticket::after { bottom: -10px; }
+    .ticket-header {
+      text-align: center;
+      border-bottom: 2px dashed rgba(43,33,24,0.25);
+      padding-bottom: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .ticket-header h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #7a2c12;
+    }
+    .ticket-header p { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: #8a7864; }
+    .ticket-body { font-size: 0.9rem; min-height: 120px; }
+    .ticket-body .placeholder { color: #9a8a76; font-style: italic; text-align: center; padding: 1.5rem 0.5rem; }
+    .ticket-line { display: flex; justify-content: space-between; gap: 1rem; padding: 0.4rem 0; border-bottom: 1px solid rgba(43,33,24,0.08); }
+    .ticket-line .k { font-weight: 700; color: #5a4632; white-space: nowrap; }
+    .ticket-line .v { text-align: right; }
+    .ticket-list { padding: 0.4rem 0; border-bottom: 1px solid rgba(43,33,24,0.08); }
+    .ticket-list .k { font-weight: 700; color: #5a4632; display: block; margin-bottom: 0.15rem; }
+    .ticket-note {
+      margin-top: 1.2rem;
+      padding: 0.9rem 1rem;
+      background: rgba(122,44,18,0.08);
+      border-left: 3px solid #b53f19;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: #5a4632;
+    }
+    .ticket-actions { display: flex; flex-direction: column; gap: 0.7rem; margin-top: 1.4rem; }
+    .ticket-actions .btn { width: 100%; font-size: 0.95rem; padding: 0.85rem 1rem; }
+    .btn-dark-ghost { background: transparent; border: 1.5px solid #7a2c12; color: #7a2c12; }
+    .btn-dark-ghost:hover { background: #7a2c12; color: var(--cream-paper); }
+    .btn-review { width: 100%; margin-top: 1.5rem; }
+    .form-status { margin-top: 0.9rem; font-size: 0.85rem; color: var(--gold); text-align: center; min-height: 1.2em; }
+    .ticket-status { margin-top: 0.7rem; font-size: 0.85rem; color: #7a2c12; font-weight: 600; text-align: center; min-height: 1.2em; }
+
+    @media (max-width: 980px) {
+      .quote-shell { grid-template-columns: 1fr; }
+      .quote-ticket-wrap { position: static; }
+    }
+    @media (max-width: 640px) {
+      .field-row { grid-template-columns: 1fr; }
+      .quote-form { padding: 1.5rem 1.2rem; }
+    }
+
+    /* ============ SIGNATURE SPREADS ============ */
+    .spreads-section { padding: 4rem 0; background: var(--bg-deep); border-bottom: 1px solid var(--line); }
+    .spreads-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.6rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .spread-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .spread-card:hover { transform: translateY(-6px); border-color: var(--ember); box-shadow: var(--shadow-xl); }
+    .spread-card.featured { border-color: rgba(217,79,34,0.6); }
+    .spread-head {
+      background: linear-gradient(145deg, #33271d, var(--surface-2));
+      padding: 1.8rem 1.6rem 1.4rem;
+      border-bottom: 2px solid var(--ember);
+      text-align: center;
+      position: relative;
+    }
+    .spread-flag {
+      position: absolute;
+      top: 14px; right: 14px;
+      background: var(--ember);
+      color: #fff;
+      font-size: 0.6rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 0.28rem 0.8rem;
+      border-radius: 30px;
+    }
+    .spread-head i { font-size: 2.2rem; color: var(--ember); margin-bottom: 0.6rem; display: block; }
+    .spread-head h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 700; }
+    .spread-head p { color: var(--gold); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-top: 0.2rem; }
+    .spread-body { padding: 1.5rem 1.6rem; flex: 1; display: flex; flex-direction: column; }
+    .spread-body ul { list-style: none; margin-bottom: 1.3rem; flex: 1; }
+    .spread-body li {
+      display: flex;
+      gap: 0.7rem;
+      align-items: flex-start;
+      padding: 0.42rem 0;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      border-bottom: 1px solid rgba(224,176,119,0.1);
+    }
+    .spread-body li:last-child { border-bottom: none; }
+    .spread-body li i { color: var(--gold); font-size: 0.75rem; margin-top: 0.4rem; flex-shrink: 0; }
+    .spread-body .btn { width: 100%; font-size: 0.92rem; padding: 0.8rem 1rem; }
+    .spreads-note { text-align: center; color: var(--text-muted); font-size: 0.88rem; margin-top: 1.8rem; }
+    .spreads-note a { color: var(--gold); font-weight: 600; text-decoration: none; }
+
+    /* ============ SERVED UP YOUR WAY ============ */
+    .serve-section { padding: 4rem 0; background: var(--bg-deep); border-top: 1px solid var(--line); }
+    .serve-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.4rem;
+      max-width: 1100px;
+      margin: 2.4rem auto 0;
+    }
+    .serve-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.9rem 1.5rem;
+      text-align: center;
+      transition: transform 0.3s, border-color 0.3s;
+      position: relative;
+    }
+    .serve-card:hover { transform: translateY(-5px); border-color: var(--ember); }
+    .serve-icon {
+      width: 62px; height: 62px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      background: rgba(217,79,34,0.14);
+      border: 1px solid rgba(217,79,34,0.45);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .serve-icon i { font-size: 1.5rem; color: var(--ember); }
+    .serve-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 0.4rem; }
+    .serve-card p { color: var(--text-muted); font-size: 0.9rem; }
+    .serve-tag {
+      display: inline-block;
+      margin-top: 0.9rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ============ MEET THE PITMASTER ============ */
+    .pitmaster-section { padding: 4.5rem 0; background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .pitmaster-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 3rem;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .pitmaster-photo {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-xl);
+      position: relative;
+      height: 100vh;
+    }
+    .pitmaster-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .pitmaster-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(20,16,12,0.55), transparent 45%);
+      pointer-events: none;
+    }
+    .pitmaster-badge {
+      position: absolute;
+      bottom: 16px; left: 16px; right: 16px;
+      z-index: 2;
+      background: rgba(16,12,9,0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 0.8rem 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .pitmaster-badge i { color: var(--ember); font-size: 1.3rem; }
+    .pitmaster-badge strong { display: block; font-size: 0.95rem; }
+    .pitmaster-badge span { font-size: 0.72rem; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; }
+    .pitmaster-content .section-eyebrow, .pitmaster-content .section-title { text-align: left; }
+    .pitmaster-content p { color: var(--text-muted); margin-bottom: 1rem; }
+    .pitmaster-content strong { color: var(--cream); }
+    .pitmaster-values { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.4rem 0 1.8rem; }
+    .pitmaster-values span {
+      background: rgba(217,79,34,0.12);
+      border: 1px solid rgba(217,79,34,0.4);
+      color: var(--gold);
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    @media (max-width: 900px) {
+      .pitmaster-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .pitmaster-photo { height: 330px; }
+      .pitmaster-content .section-eyebrow, .pitmaster-content .section-title { text-align: center; }
+      .pitmaster-content .btn { width: 100%; }
+    }
+
+    /* ============ PORTION GUIDE ============ */
+    .portion-section { padding: 4rem 0; background: var(--bg-deep); border-bottom: 1px solid var(--line); }
+    .portion-wrap { max-width: 900px; margin: 0 auto; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: var(--radius-lg); border: 1px solid var(--line); }
+    .portion-table { width: 100%; min-width: 560px; border-collapse: collapse; background: var(--card); }
+    .portion-table th {
+      background: linear-gradient(145deg, #33271d, var(--surface-2));
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-align: left;
+      padding: 1rem 1.3rem;
+      border-bottom: 2px solid var(--ember);
+    }
+    .portion-table td {
+      padding: 0.95rem 1.3rem;
+      border-bottom: 1px solid rgba(224,176,119,0.1);
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      vertical-align: top;
+    }
+    .portion-table tr:last-child td { border-bottom: none; }
+    .portion-table td:first-child { color: var(--cream); font-weight: 600; white-space: nowrap; }
+    .portion-table td i { color: var(--ember); margin-right: 8px; width: 18px; text-align: center; }
+    .portion-tip {
+      max-width: 900px;
+      margin: 1.4rem auto 0;
+      background: rgba(217,79,34,0.12);
+      border-left: 4px solid var(--ember);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.4rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .portion-tip strong { color: var(--cream); }
+
+    /* ============ GALLERY ============ */
+    .gallery-section { padding: 4rem 0; background: var(--bg-deep); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 180px;
+      gap: 0.9rem;
+      max-width: 1100px;
+      margin: 2.4rem auto 0;
+    }
+    .gallery-item {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      position: relative;
+    }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(20,16,12,0.45), transparent 55%);
+      opacity: 0;
+      transition: opacity 0.35s;
+      pointer-events: none;
+    }
+    .gallery-item:hover::after { opacity: 1; }
+    .gallery-item.tall { grid-row: span 2; }
+    .gallery-item.wide { grid-column: span 2; }
+    @media (max-width: 820px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
+    }
+
+    /* ============ SERVICE AREA ============ */
+    .area-section { padding: 4rem 0; background: var(--surface); border-top: 1px solid var(--line); }
+    .area-note { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 1.8rem; }
+    .area-note a { color: var(--gold); font-weight: 600; text-decoration: none; }
+
+    /* ============ FINAL CTA BANNER ============ */
+    .final-cta {
+      background:
+        radial-gradient(ellipse 70% 80% at 50% 110%, rgba(217,79,34,0.22), transparent 65%),
+        var(--bg-deep);
+      border-top: 1px solid var(--line);
+      padding: 4.5rem 2rem;
+      text-align: center;
+    }
+    .final-cta h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 0.9rem;
+    }
+    .final-cta h2 span { color: var(--ember); }
+    .final-cta p { color: var(--text-muted); max-width: 560px; margin: 0 auto 2rem; font-size: 1.05rem; }
+    .final-cta-actions { display: flex; justify-content: center; gap: 0.9rem; flex-wrap: wrap; }
+    @media (max-width: 600px) {
+      .final-cta { padding: 3.2rem 1.2rem; }
+      .final-cta-actions .btn { width: 100%; }
+    }
+
+    /* ============ STICKY MOBILE CTA ============ */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 400;
+      background: rgba(16, 12, 9, 0.97);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--line);
+      padding: 0.7rem 1rem calc(0.7rem + env(safe-area-inset-bottom));
+      gap: 0.7rem;
+    }
+    .sticky-cta .btn { flex: 1; font-size: 0.9rem; padding: 0.75rem 1rem; min-height: 46px; }
+
+    /* ============ FLOATING ACTION BUTTONS ============ */
+    .float-actions {
+      position: fixed;
+      right: 18px;
+      bottom: 80px;
+      z-index: 360;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.6rem;
+    }
+    .float-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.3rem;
+      min-height: 48px;
+      border-radius: 60px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.45);
+      transition: transform 0.25s, background 0.25s, box-shadow 0.25s;
+      white-space: nowrap;
+    }
+    .float-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .float-btn-quote {
+      background: var(--ember);
+      color: #fff;
+    }
+    .float-btn-quote:hover { background: var(--ember-dark); transform: translateY(-2px); }
+    .float-btn-call {
+      background: rgba(16, 12, 9, 0.95);
+      border: 1.5px solid var(--gold);
+      color: var(--gold);
+      backdrop-filter: blur(10px);
+    }
+    .float-btn-call:hover { background: var(--gold); color: #14100c; transform: translateY(-2px); }
+    @media (max-width: 820px) {
+      /* Sit above the back-to-top button */
+      .float-actions { right: 14px; }
+      .float-btn { padding: 0.65rem 1.1rem; font-size: 0.82rem; min-height: 46px; }
+    }
+
+    /* ============ BACK TO TOP ============ */
+    .back-to-top {
+      position: fixed;
+      right: 18px;
+      bottom: 20px;
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: var(--ember);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s;
+      z-index: 350;
+    }
+    .back-to-top.visible { opacity: 1; pointer-events: auto; }
+    .back-to-top:hover { background: var(--ember-dark); transform: translateY(-2px); }
+
+    footer {
+      background: #0d0a07;
+      text-align: center;
+      padding: 2.2rem 1.2rem;
+      border-top: 1px solid var(--line);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    footer i { color: var(--gold); margin: 0 4px; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
 </head>
 <body>
 
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="topbar"><div class="container">
-    <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M12 2c1 3-1 4-1 6 0 1 1 2 2 2s2-1 2-3c2 2 3 4 3 7a6 6 0 1 1-12 0c0-3 2-5 3-6 1 2 2 2 2 1 0-2-1-3-1-4 0-3 2-5 3-6Z"/></svg> <strong>Smoked over pecan wood</strong> · Serving Spring &amp; Houston since 1989</span>
-    <span><a href="tel:+18322468552"><svg viewBox="0 0 24 24" width="1.1em" height="1.1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5c0 8 7 15 15 15l2-3-4-2-2 2c-3-1-6-4-7-7l2-2-2-4-3 1Z"/></svg> (832) 246-8552</a></span>
-  </div></div>
-  <header class="site-header"><div class="container">
-    <a class="brand-link" href="/" aria-label="Teague's BBQ home"><img class="brand-img" src="/assets/images/logo.png" alt="Teague's BBQ" width="639" height="382"></a>
-    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
-    <nav class="nav-links" aria-label="Main">
-      <a href="/">Home</a><a href="/about/">About</a><a href="/menu/">Menu</a><a href="/catering/" aria-current="page">Catering</a><a href="/contact/">Contact</a>
-    </nav>
-    <div class="header-cta">
-      <a class="btn btn-ember" href="https://www.ezcater.com/catering/pvt/teagues-bbq-3?fcv=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="1.05em" height="1.05em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg> Order Online</a>
-    </div>
-  </div></header>
-<main id="main">
+<!-- HEADER -->
+<header class="site-header">
+  <div class="nav-container">
+    <a class="logo" href="/" aria-label="Teague's BBQ home"><img src="/assets/images/logo.png" alt="Teague's BBQ" style="height:46px;width:auto;display:block"></a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/menu/">Menu</a></li>
+      <li><a href="/catering/" aria-current="page">Catering</a></li>
+      
+      <li><a href="/contact/">Contact</a></li>
+      <li><a href="#quote" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </div>
+</header>
 
-  <section class="page-hero"><div class="page-hero__bg"><img src="/assets/images/catering.jpg" alt="" loading="lazy"></div><div class="container">
-    <div class="breadcrumb"><a href="/">Home</a> › Catering</div>
-    <h1>Catering <em>&amp; more</em></h1>
-    <p>Feeding a crowd since 1989. From backyard parties to 300-guest events.</p>
-  </div></section>
-  <section class="section"><div class="container">
-    <div class="split">
-      <div class="prose reveal">
-        <span class="eyebrow">Let us cater it</span>
-        <h2 class="section-head" style="margin:.3rem 0 1rem">A spread for any occasion</h2>
-        <p>Want your event catered by Teague's BBQ? Our catering &amp; more menu provides a variety of Entrees, Sides, Breads, Desserts, Drinks and Specialty Items — everything smoked and prepared with the same care we've brought to every plate since 1989.</p>
-        <p>Our very first catering event was for 300 guests. Call us today to start planning yours.</p>
-        <div class="hero-cta" style="margin-top:1.2rem"><a class="btn btn-ember" href="https://www.ezcater.com/catering/pvt/teagues-bbq-3?fcv=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="1.05em" height="1.05em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg> Order Catering Online</a><a class="btn btn-outline" href="tel:+18326063789">Catering (832) 606-3789</a></div>
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="twist-badge">🔥 Catering With A Twist 🔥</div>
+      <h2>Authentic Texas Smoke <br><span>&amp; Cajun Soul</span></h2>
+      <p class="hero-desc">Bold flavors, farm-fresh sides, and seafood that steals the show. From 16-hour post oak briskets to crawfish étouffée — we cater events your guests will talk about for years, across Spring, TX and beyond.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-primary"><i class="fas fa-clipboard-list"></i> Build My Catering Quote</a>
+        <a href="tel:8326063789" class="btn btn-ghost"><i class="fas fa-phone"></i> (832) 606-3789</a>
       </div>
-      <div class="reveal">
-        <div class="svc-grid" style="grid-template-columns:1fr 1fr;margin-top:0">
-          <a class="svc" href="/menu/#catering-packages"><h3 style="font-size:1.15rem">Catering Packages</h3></a><a class="svc" href="/menu/#sandwiches-burgers"><h3 style="font-size:1.15rem">Sandwiches & Burgers</h3></a><a class="svc" href="/menu/#hot-entr-es"><h3 style="font-size:1.15rem">Hot Entrées</h3></a><a class="svc" href="/menu/#sides"><h3 style="font-size:1.15rem">Sides</h3></a><a class="svc" href="/menu/#desserts"><h3 style="font-size:1.15rem">Desserts</h3></a><a class="svc" href="/menu/#beverages"><h3 style="font-size:1.15rem">Beverages</h3></a>
-        </div>
-        <p style="text-align:center;margin-top:1rem"><a class="btn btn-outline" href="/menu/">See the full menu &amp; prices <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      <div class="hero-trust">
+        <span><i class="fas fa-fire"></i> Smoked Low &amp; Slow Over Post Oak</span>
+        <span><i class="fas fa-handshake"></i> Family Owned &amp; Operated</span>
+        <span><i class="fas fa-truck"></i> Pickup to Full Service</span>
       </div>
     </div>
-  </div></section>
-  
-  <section class="section"><div class="container"><div class="cta-card reveal">
-    <span class="eyebrow" style="color:rgba(255,255,255,.85)">Y'all come hungry</span>
-    <h2>Planning an event?</h2><p>Tell us the date and the headcount — we'll bring the barbecue.</p>
-    <div class="hero-cta"><a class="btn btn-lg" style="--bg:#fff;--fg:var(--brick)" href="https://www.ezcater.com/catering/pvt/teagues-bbq-3?fcv=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="1.05em" height="1.05em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg> Order Online</a><a class="btn btn-outline on-dark btn-lg" href="/menu/">View the Menu</a></div>
-  </div></div></section>
-</main>
+    <div class="hero-carousel">
+      <div class="carousel-track" id="heroTrack">
+        <div class="carousel-slide"><img src="/assets/images/catering-page/c1.jpg" alt="Smoked brisket platter"></div>
+        <div class="carousel-slide"><img src="/assets/images/catering-page/c2.jpg" alt="Cajun shrimp"></div>
+        <div class="carousel-slide"><img src="/assets/images/catering-page/c3.png" alt="Crawfish and crab boil"></div>
+        <div class="carousel-slide"><img src="/assets/images/catering-page/c4.jpg" alt="BBQ spread"></div>
+        <div class="carousel-slide"><img src="/assets/images/catering-page/c5.jpg" alt="Smoked meats"></div>
+        <div class="carousel-slide"><img src="/assets/images/catering-page/c6.jpg" alt="Catering setup"></div>
+        <div class="carousel-slide"><img src="/assets/images/catering-page/c7.webp" alt="Cajun seafood"></div>
+        <div class="carousel-slide"><img src="/assets/images/catering-page/c8.jpg" alt="Southern sides"></div>
+      </div>
+      <div class="carousel-controls" id="heroDots"></div>
+    </div>
+  </div>
+</section>
 
-  <footer class="site-footer"><div class="container">
-    <div class="foot-grid">
-      <div>
-        <img class="foot-logo" src="/assets/images/logo.png" alt="Teague's BBQ" width="639" height="382">
-        <p style="margin-top:.7rem;max-width:38ch">Slow-smoked Texas barbecue and full-service catering in Spring, TX. Family-run and pit-proud since 1989.</p>
-        <div class="foot-social">
-          <a href="https://www.facebook.com/teaguesbbq/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 22v-8h3l1-3h-4V9c0-1 .3-1.6 1.7-1.6H17V4.8C16.6 4.7 15.5 4.6 14.3 4.6c-2.6 0-4.3 1.6-4.3 4.4V11H7v3h3v8h3Z"/></svg></a>
-          <a href="https://instagram.com/teaguesbbq/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+<!-- INTRO -->
+<section class="menu-intro">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-text">
+        <h3>A Catering Menu With a Twist</h3>
+        <p>We bring you the very best of authentic, slow-smoked Texas BBQ — paired with a twist of Southern comfort classics and traditional Cajun favorites. Every catering plate comes fully loaded with your choice of sides, our signature BBQ sauce, all the standard trimmings (pickles, onions, jalapeños, and bread), and quality disposable dinnerware. Nobody leaves hungry — that's a promise.</p>
+
+        <p><strong>Beverages:</strong> Add ice-cold Sweet Tea or Lemonade for just $1.50 per person (includes a dedicated beverage server, cups, and plenty of ice).</p>
+
+        <p>Have something specific in mind? From custom menus to dietary accommodations, we're happy to tailor everything to fit your event.</p>
+
+        <div class="contact-highlight">
+          <i class="fas fa-concierge-bell"></i> Ready to build your perfect spread? Give Matthew Teague a call at <a href="tel:8326063789">(832) 606-3789</a> and let's start planning.
         </div>
       </div>
-      <div>
-        <h4>EXPLORE</h4>
-        <ul class="foot-links"><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/menu/">Menu</a></li><li><a href="/catering/">Catering</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://www.ezcater.com/catering/pvt/teagues-bbq-3?fcv=1" target="_blank" rel="noopener">Order Online</a></li></ul>
-      </div>
-      <div>
-        <h4>FIND US</h4>
-        <p>3307 Spring Stuebner Road, Suite B<br>Spring, TX 77389</p>
-        <p style="margin-top:.6rem"><a href="tel:+18322468552">(832) 246-8552</a><br>Catering <a href="tel:+18326063789">(832) 606-3789</a></p>
-        <p style="margin-top:.6rem"><b style="color:var(--paper)">Closed Monday</b><br>Tue–Sat 11am–8pm · Sun 12pm–6pm</p>
+      <div class="intro-stats">
+        <div><i class="fas fa-fire"></i> Authentic Pit-Smoked BBQ</div>
+        <div><i class="fas fa-users"></i> Backyard Parties to Full Weddings</div>
+        <div><i class="fas fa-map-marker-alt"></i> Serving Spring, TX &amp; Surrounding Areas</div>
+        <div><i class="fas fa-star"></i> Custom Menus, Built Your Way</div>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>© 2026 Teague's BBQ · Spring, TX</span>
-      <span>Website by DinePalace Marketing</span>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how-it-works">
+  <div class="container">
+    <div class="section-eyebrow">Simple as 1-2-3</div>
+    <h2 class="section-title">How Our Catering Works</h2>
+    <p class="section-sub">Three easy steps between you and a table full of Texas smoke.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Tell Us About Your Event</h4>
+        <p>Give us the date, location, headcount, and how you want it served — pickup, delivery, drop-off, or full service. We'll take it from there.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Pick Your Favorites</h4>
+        <p>Choose your meats, sides, breads, desserts, and drinks. Mix Texas smoke with Cajun soul any way you like.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Get Your Custom Quote</h4>
+        <p>Teague's BBQ reviews your request personally and gets back to you with a custom quote built around your event. No cookie-cutter pricing here.</p>
+      </div>
     </div>
-  </div></footer>
-<script src="/assets/js/teagues.js" defer></script>
+  </div>
+</section>
+
+<!-- SIGNATURE SPREADS -->
+<section class="spreads-section" id="spreads">
+  <div class="container">
+    <div class="section-eyebrow">Crowd Favorites, Ready to Go</div>
+    <h2 class="section-title">Our Most-Ordered Signature Spreads</h2>
+    <p class="section-sub">Not sure where to start? These three spreads are proven crowd-pleasers. Start with one, then adjust it however you like — everything's customizable.</p>
+    <div class="spreads-grid">
+      <div class="spread-card">
+        <div class="spread-head">
+          <i class="fas fa-fire"></i>
+          <h4>The Backyard Classic</h4>
+          <p>Two-Meat Spread</p>
+        </div>
+        <div class="spread-body">
+          <ul>
+            <li><i class="fas fa-circle"></i> Smoked Beef Brisket &amp; Pulled Pork</li>
+            <li><i class="fas fa-circle"></i> Two sides — Potato Salad &amp; Baked Beans are the classic pairing</li>
+            <li><i class="fas fa-circle"></i> Dinner rolls or sliced bread</li>
+            <li><i class="fas fa-circle"></i> Signature BBQ sauce &amp; all the trimmings</li>
+            <li><i class="fas fa-circle"></i> Great for family reunions, birthdays &amp; tailgates</li>
+          </ul>
+          <a href="#quote" class="btn btn-primary">Start With This Spread</a>
+        </div>
+      </div>
+      <div class="spread-card featured">
+        <div class="spread-head">
+          <div class="spread-flag">Most Requested</div>
+          <i class="fas fa-crown"></i>
+          <h4>The Pitmaster's Table</h4>
+          <p>Three-Meat Spread</p>
+        </div>
+        <div class="spread-body">
+          <ul>
+            <li><i class="fas fa-circle"></i> 16-hour Brisket, Pork Ribs &amp; Jalapeño Cheddar Sausage</li>
+            <li><i class="fas fa-circle"></i> Three sides — Mac &amp; Cheese and Collard Greens shine here</li>
+            <li><i class="fas fa-circle"></i> Jalapeño corn bread</li>
+            <li><i class="fas fa-circle"></i> Peach Cobbler or Banana Pudding to finish</li>
+            <li><i class="fas fa-circle"></i> The wedding &amp; corporate event favorite</li>
+          </ul>
+          <a href="#quote" class="btn btn-primary">Start With This Spread</a>
+        </div>
+      </div>
+      <div class="spread-card">
+        <div class="spread-head">
+          <i class="fas fa-shrimp fa-fish"></i>
+          <h4>The Bayou Feast</h4>
+          <p>Cajun Spread</p>
+        </div>
+        <div class="spread-body">
+          <ul>
+            <li><i class="fas fa-circle"></i> Shrimp or Crawfish Étouffée &amp; Fried Catfish</li>
+            <li><i class="fas fa-circle"></i> Dirty Rice &amp; Seafood Dressing "Special"</li>
+            <li><i class="fas fa-circle"></i> Garlic bread, hot and buttery</li>
+            <li><i class="fas fa-circle"></i> Buttermilk Pie for the finish</li>
+            <li><i class="fas fa-circle"></i> Ask about full seafood boils for the whole crowd</li>
+          </ul>
+          <a href="#quote" class="btn btn-primary">Start With This Spread</a>
+        </div>
+      </div>
+    </div>
+    <p class="spreads-note">These are just starting points — swap any meat, side, or dessert for another item from the menu below. Prefer to talk it through? <a href="tel:8326063789">Call Matthew at (832) 606-3789</a>.</p>
+  </div>
+</section>
+
+<!-- MENU TABS -->
+<div class="tabs-wrapper" id="menu-section">
+  <div class="container">
+    <div class="tabs-container">
+      <button class="tab-btn active" data-category="entrees"><i class="fas fa-drumstick-bite"></i> Entrées</button>
+      <button class="tab-btn" data-category="sides"><i class="fas fa-carrot"></i> Sides</button>
+      <button class="tab-btn" data-category="breads"><i class="fas fa-bread-slice"></i> Breads</button>
+      <button class="tab-btn" data-category="desserts"><i class="fas fa-cake-candles"></i> Desserts</button>
+      <button class="tab-btn" data-category="drinks"><i class="fas fa-glass-cheers"></i> Drinks</button>
+    </div>
+  </div>
+</div>
+
+<!-- MENU SECTIONS -->
+<div class="container">
+  <div id="entrees" class="menu-section active-section">
+    <div class="section-eyebrow">✦ Pit-Smoked Meats &amp; Specialty Plates ✦</div>
+    <h3 class="menu-heading">One to Four Meat Plates</h3>
+    <div class="grid-cards" id="entreesGrid"></div>
+    <div class="grid-cards" id="otherPlatesGrid" style="margin-top: 2rem;"></div>
+    <div class="special-request">
+      🍽️ And that's not even the full list — whole hog, custom seafood boils, venison, lamb. Just ask, and we'll make it happen. We bring your vision to life.
+    </div>
+  </div>
+  <div id="sides" class="menu-section">
+    <div class="grid-cards" id="sidesGrid"></div>
+    <div class="price-note" style="text-align:center; margin-top:1.5rem;">⭐ FARM-FRESH SIDES MADE FROM SCRATCH — JUST LIKE GRANDMA'S</div>
+  </div>
+  <div id="breads" class="menu-section"><div class="grid-cards" id="breadsGrid"></div></div>
+  <div id="desserts" class="menu-section"><div class="grid-cards" id="dessertsGrid"></div></div>
+  <div id="drinks" class="menu-section"><div class="grid-cards" id="drinksGrid"></div></div>
+</div>
+
+<!-- SERVED UP YOUR WAY -->
+<section class="serve-section" id="service-styles">
+  <div class="container">
+    <div class="section-eyebrow">Four Ways to Get Fed</div>
+    <h2 class="section-title">Served Your Way</h2>
+    <p class="section-sub">Every event is different — that's why we offer four service styles. Pick whichever suits your gathering and your budget.</p>
+    <div class="serve-grid">
+      <div class="serve-card">
+        <div class="serve-icon"><i class="fas fa-box"></i></div>
+        <h4>Pickup</h4>
+        <p>Stop by and pick up your order hot off the pit, packed securely and ready to travel. The most budget-friendly option, too.</p>
+        <span class="serve-tag">Best for Smaller Gatherings</span>
+      </div>
+      <div class="serve-card">
+        <div class="serve-icon"><i class="fas fa-truck"></i></div>
+        <h4>Delivery</h4>
+        <p>We bring it straight to your door, hot and on time. You handle the serving — we handle the smoking and the driving.</p>
+        <span class="serve-tag">Best for Office Lunches</span>
+      </div>
+      <div class="serve-card">
+        <div class="serve-icon"><i class="fas fa-table"></i></div>
+        <h4>Drop-Off Catering</h4>
+        <p>We deliver, set up the full buffet, and then step out so you can enjoy your party without the fuss.</p>
+        <span class="serve-tag">Best for Casual Events</span>
+      </div>
+      <div class="serve-card">
+        <div class="serve-icon"><i class="fas fa-bell-concierge fa-concierge-bell"></i></div>
+        <h4>Full Service</h4>
+        <p>Our crew stays start to finish — serving your guests, keeping the line moving, and cleaning up afterward. White-glove service, Texas-style.</p>
+        <span class="serve-tag">Best for Weddings &amp; Big Events</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERFECT FOR ANY EVENT -->
+<section class="events-section">
+  <div class="container">
+    <div class="section-eyebrow">From Backyards to Ballrooms</div>
+    <h2 class="section-title">Perfect for Any Occasion</h2>
+    <p class="section-sub">If people are gathering, chances are we've catered it.</p>
+    <div class="events-grid">
+      <div class="event-chip"><i class="fas fa-rings-wedding fa-heart"></i><span>Weddings</span></div>
+      <div class="event-chip"><i class="fas fa-briefcase"></i><span>Corporate Events</span></div>
+      <div class="event-chip"><i class="fas fa-house-user"></i><span>Family Gatherings</span></div>
+      <div class="event-chip"><i class="fas fa-graduation-cap"></i><span>Graduations</span></div>
+      <div class="event-chip"><i class="fas fa-church"></i><span>Church Events</span></div>
+      <div class="event-chip"><i class="fas fa-people-group fa-users"></i><span>Community Events</span></div>
+      <div class="event-chip"><i class="fas fa-gifts"></i><span>Holiday Parties</span></div>
+      <div class="event-chip"><i class="fas fa-football"></i><span>Tailgates</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="why-section">
+  <div class="container">
+    <div class="section-eyebrow">The Teague's Difference</div>
+    <h2 class="section-title">Why Customers Keep Coming Back to Teague's</h2>
+    <div class="why-grid" style="margin-top: 2.4rem;">
+      <div class="why-item"><i class="fas fa-fire"></i><p><strong>Fresh BBQ smoked for YOUR event</strong>Cooked low and slow just for you — never reheated leftovers. Not now, not ever.</p></div>
+      <div class="why-item"><i class="fas fa-list-check fa-tasks"></i><p><strong>A menu as big as Texas</strong>Pit-smoked BBQ, Cajun classics, pastas, and seafood boils — mix and match as much as you like.</p></div>
+      <div class="why-item"><i class="fas fa-utensils"></i><p><strong>The whole spread, done right</strong>Meats, sides, breads, desserts, and drinks — everything your table needs, nothing it doesn't.</p></div>
+      <div class="why-item"><i class="fas fa-truck"></i><p><strong>Served your way</strong>Pickup, delivery, drop-off, or full service with a serving crew — you choose, we deliver.</p></div>
+      <div class="why-item"><i class="fas fa-file-invoice-dollar"></i><p><strong>Honest custom quotes</strong>Pricing built around your event's real needs — no guesswork, no hidden fees.</p></div>
+      <div class="why-item"><i class="fas fa-handshake"></i><p><strong>Personal, handshake-quality service</strong>You'll work with Matthew Teague himself, start to finish. That's how we do business.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEET THE PITMASTER -->
+<section class="pitmaster-section" id="pitmaster">
+  <div class="container">
+    <div class="pitmaster-grid">
+      <div class="pitmaster-photo">
+        <img src="/assets/images/catering-page/pitmaster.avif" alt="Matthew Teague working the smoker at Teague's BBQ">
+        <div class="pitmaster-badge">
+          <i class="fas fa-fire"></i>
+          <div>
+            <strong>Matthew Teague</strong>
+            <span>Pitmaster &amp; Owner</span>
+          </div>
+        </div>
+      </div>
+      <div class="pitmaster-content">
+        <div class="section-eyebrow">The Man Behind the Smoke</div>
+        <h2 class="section-title">Meet Your Pitmaster</h2>
+        <p>Around here, BBQ isn't just a business — it's a calling. <strong>Matthew Teague</strong> has spent years tending post oak fires the traditional way: low, slow, and with no shortcuts. Every brisket gets 16 hours of his attention. Every rack of ribs gets checked by hand. That's simply how it's done.</p>
+        <p>And the Cajun side? That's family too — étouffée, dirty rice, and seafood boils made the way they're supposed to be, with recipes that came up from the bayou and never lost their soul.</p>
+        <p>When you book Teague's, you're not handed off to a call center. <strong>You talk to Matthew, you plan with Matthew, and Matthew is the one making sure your event goes off without a hitch.</strong></p>
+        <div class="pitmaster-values">
+          <span><i class="fas fa-fire"></i> Post Oak, Always</span>
+          <span><i class="fas fa-clock"></i> 16-Hour Briskets</span>
+          <span><i class="fas fa-heart"></i> Family Recipes</span>
+          <span><i class="fas fa-handshake"></i> One Point of Contact</span>
+        </div>
+        <a href="tel:8326063789" class="btn btn-primary"><i class="fas fa-phone"></i> Talk to Matthew Directly</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTION PLANNING GUIDE -->
+<section class="portion-section" id="portion-guide">
+  <div class="container">
+    <div class="section-eyebrow">Plan the Right Amount</div>
+    <h2 class="section-title">How Much BBQ Do I Need?</h2>
+    <p class="section-sub">The question we get asked most. Here's the rule of thumb we use when planning spreads — and don't worry, we'll double-check your numbers when we build your quote.</p>
+    <div class="portion-wrap">
+      <table class="portion-table">
+        <thead>
+          <tr>
+            <th>What You're Serving</th>
+            <th>Per Person Rule of Thumb</th>
+            <th>Pitmaster's Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-drumstick-bite"></i>Smoked Meats (one meat)</td>
+            <td>About 1/3 lb per person</td>
+            <td>Brisket lovers eat heavy — round up for hungry crowds</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-utensils"></i>Smoked Meats (two or more)</td>
+            <td>About 1/4 lb of each meat</td>
+            <td>People like to sample everything on a multi-meat spread</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-bone"></i>Pork Ribs</td>
+            <td>3–4 bones per person</td>
+            <td>More if ribs are the star of the show</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-carrot"></i>Sides</td>
+            <td>4–6 oz of each side</td>
+            <td>Two or three sides keeps every plate full and happy</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-bread-slice"></i>Breads</td>
+            <td>1–2 pieces per person</td>
+            <td>Nobody has ever complained about extra corn bread</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-cake-candles fa-birthday-cake"></i>Desserts</td>
+            <td>1 serving per person</td>
+            <td>Trust us — people always find room for cobbler</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="portion-tip">
+      <i class="fas fa-lightbulb" style="color:var(--ember); margin-right:8px;"></i><strong>Pitmaster's tip:</strong> Feeding a crowd of big eaters — football teams, work crews, or teenagers? Pad your headcount by 10–15%. Leftover Teague's brisket makes a great breakfast anyway.
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<!-- TODO: Swap these placeholder quotes with real Google/Facebook reviews before launch -->
+<section class="testimonial-section">
+  <div class="container">
+    <div class="section-eyebrow">Word Around Town</div>
+    <h2 class="section-title">What Our Customers Are Saying</h2>
+    <p class="section-sub">Don't just take our word for it — here's what our neighbors have to say.</p>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>The brisket disappeared before the speeches even started. Our guests are still talking about it months later.</blockquote>
+        <cite>Happy Customer <span>Wedding · Spring, TX</span></cite>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>Best company lunch we've ever had. On time, beautifully set up, and that crawfish étouffée was unforgettable.</blockquote>
+        <cite>Happy Customer <span>Corporate Event · The Woodlands, TX</span></cite>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>They fed 150 at our church homecoming and every plate came back clean. Matthew treated us like family.</blockquote>
+        <cite>Happy Customer <span>Church Event · Klein, TX</span></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-eyebrow">Straight Off the Pit</div>
+    <h2 class="section-title">A Taste of What's Coming</h2>
+    <p class="section-sub">Fair warning: don't scroll through this on an empty stomach.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item tall"><img src="/assets/images/catering-page/c1.jpg" alt="Smoked brisket platter fresh off the pit" loading="lazy"></div>
+      <div class="gallery-item wide"><img src="/assets/images/catering-page/c3.png" alt="Crawfish and crab boil spread" loading="lazy"></div>
+      <div class="gallery-item"><img src="/assets/images/catering-page/c2.jpg" alt="Cajun shrimp close-up" loading="lazy"></div>
+      <div class="gallery-item"><img src="/assets/images/catering-page/c5.jpg" alt="Assorted smoked meats" loading="lazy"></div>
+      <div class="gallery-item"><img src="/assets/images/catering-page/c4.jpg" alt="Full BBQ catering spread" loading="lazy"></div>
+      <div class="gallery-item wide"><img src="/assets/images/catering-page/c6.jpg" alt="Catering setup ready for guests" loading="lazy"></div>
+      <div class="gallery-item"><img src="/assets/images/catering-page/c7.webp" alt="Cajun seafood platter" loading="lazy"></div>
+      <div class="gallery-item"><img src="/assets/images/catering-page/c8.jpg" alt="Southern sides made from scratch" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-eyebrow">Got Questions?</div>
+    <h2 class="section-title">Straight Answers, No Runaround</h2>
+    <p class="section-sub">The questions we hear most often. Don't see yours? Give us a call.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>How far ahead should I book my catering?</summary>
+        <div class="faq-answer">The sooner the better — especially for weddings and the holiday season, when the pits book up quickly. That said, if your event is coming up fast, don't hesitate. <a href="tel:8326063789">Call us at (832) 606-3789</a> and we'll do our best to make it work.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How far will you travel?</summary>
+        <div class="faq-answer">We're based in Spring, TX and serve the whole surrounding area — The Woodlands, Klein, Tomball, Conroe, North Houston and beyond. Have an event a bit further out? Just ask — we've taken the smoker a long way before.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What's the difference between drop-off and full-service catering?</summary>
+        <div class="faq-answer">Drop-off means we deliver everything hot, set it up buffet-style, and then leave so you can enjoy your party. Full service means our crew stays to serve your guests, keep the line moving, and clean up afterward. Pickup and standard delivery are also available — whatever suits your event.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can you handle allergies and special diets?</summary>
+        <div class="faq-answer">Absolutely. Tell us about any allergies or dietary needs in the special requests box on the quote form, and we'll plan the menu around them. We'll accommodate any reasonable request.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is there a minimum headcount?</summary>
+        <div class="faq-answer">Every event is a little different, so we don't use one-size-fits-all rules. Tell us your headcount in the quote form and we'll build something that makes sense for your group — big or small.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How does pricing work?</summary>
+        <div class="faq-answer">No hidden fees, no surprises. You tell us what you want, and Matthew builds a custom quote around your menu selections, headcount, and service type. Final pricing is always confirmed personally — the old-fashioned way.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area-section" id="service-area">
+  <div class="container">
+    <div class="section-eyebrow">Where We Travel</div>
+    <h2 class="section-title">Proudly Serving Spring &amp; Beyond</h2>
+    <p class="section-sub">Home base is Spring, TX — but the smoker has wheels, and we're happy to use them.</p>
+    <div class="events-grid">
+      <div class="event-chip"><i class="fas fa-map-marker-alt"></i><span>Spring</span></div>
+      <div class="event-chip"><i class="fas fa-tree"></i><span>The Woodlands</span></div>
+      <div class="event-chip"><i class="fas fa-map-marker-alt"></i><span>Klein</span></div>
+      <div class="event-chip"><i class="fas fa-map-marker-alt"></i><span>Tomball</span></div>
+      <div class="event-chip"><i class="fas fa-map-marker-alt"></i><span>Conroe</span></div>
+      <div class="event-chip"><i class="fas fa-city"></i><span>North Houston</span></div>
+    </div>
+    <p class="area-note">Is your event a little further away? Don't let the map stop you — <a href="tel:8326063789">call us at (832) 606-3789</a> and we'll see what we can work out.</p>
+  </div>
+</section>
+
+<!-- QUOTE CALCULATOR -->
+<section class="quote-section" id="quote">
+  <div class="container">
+    <div class="section-eyebrow">No Strings Attached · Free Custom Quote</div>
+    <h2 class="section-title">Let's Plan Your Event</h2>
+    <p class="section-sub">Tell us about your gathering and pick your favorites. Teague's BBQ will review your request and get back to you with a custom quote — final pricing is always confirmed personally, the old-fashioned way.</p>
+
+    <div class="quote-shell">
+      <!-- FORM -->
+      <div class="quote-form">
+        <!-- 1. Customer Info -->
+        <div class="form-block">
+          <div class="form-block-title"><i class="fas fa-user"></i> Your Contact Info</div>
+          <div class="field-row">
+            <div class="field"><label for="qFirstName">First Name *</label><input type="text" id="qFirstName" autocomplete="given-name" placeholder="Jane"></div>
+            <div class="field"><label for="qLastName">Last Name *</label><input type="text" id="qLastName" autocomplete="family-name" placeholder="Smith"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="qPhone">Best Number to Reach You *</label><input type="tel" id="qPhone" autocomplete="tel" placeholder="(832) 555-0123"></div>
+            <div class="field"><label for="qEmail">Email Address *</label><input type="email" id="qEmail" autocomplete="email" placeholder="jane@email.com"></div>
+          </div>
+          <div class="field-row single">
+            <div class="field"><label for="qCompany">Company / Church / Organization <span class="optional">(if applicable)</span></label><input type="text" id="qCompany" autocomplete="organization" placeholder="Company name"></div>
+          </div>
+        </div>
+
+        <!-- 2. Event Details -->
+        <div class="form-block">
+          <div class="form-block-title"><i class="fas fa-calendar-days fa-calendar"></i> Tell Us About Your Event</div>
+          <div class="field-row">
+            <div class="field"><label for="qDate">Event Date *</label><input type="date" id="qDate"></div>
+            <div class="field"><label for="qTime">Event Time</label><input type="time" id="qTime"></div>
+          </div>
+          <div class="field-row single">
+            <div class="field"><label for="qLocation">Event Location</label><input type="text" id="qLocation" placeholder="Venue name or address — home, hall, or outdoors"></div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="qEventType">What's the Occasion?</label>
+              <select id="qEventType">
+                <option value="">Select your occasion…</option>
+                <option>Wedding</option>
+                <option>Corporate Event</option>
+                <option>Birthday Party</option>
+                <option>Graduation</option>
+                <option>Family Reunion</option>
+                <option>Church Event</option>
+                <option>School Event</option>
+                <option>Community Event</option>
+                <option>Tailgate / Watch Party</option>
+                <option>Something Else</option>
+              </select>
+            </div>
+            <div class="field"><label for="qGuests">Number of Guests *</label><input type="number" id="qGuests" min="1" step="1" placeholder="e.g. 75"></div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="qService">Service Type</label>
+              <select id="qService">
+                <option value="">Select a service type…</option>
+                <option>Pickup — I'll Come Get It</option>
+                <option>Delivery — Bring It to Me</option>
+                <option>Full-Service Catering — You Handle It All</option>
+                <option>Drop-Off Catering — Set Up &amp; Go</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="qServers">Need Serving Staff?</label>
+              <select id="qServers">
+                <option value="">Select one…</option>
+                <option>Yes, Please</option>
+                <option>No, We've Got It Covered</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-row single">
+            <div class="field">
+              <label for="qDinnerware">Need Plates, Cutlery, Napkins &amp; Serving Supplies?</label>
+              <select id="qDinnerware">
+                <option value="">Select one…</option>
+                <option>Yes — Bring It All</option>
+                <option>No — We're Covered</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Food Selection -->
+        <div class="form-block">
+          <div class="form-block-title"><i class="fas fa-fire-burner fa-fire"></i> Now for the Good Part — The Food</div>
+
+          <span class="chip-group-label">HOW MANY MEATS?</span>
+          <div class="radio-row chip-group" id="meatCountGroup">
+            <span class="chip"><input type="radio" name="meatCount" id="mc1" value="1 Meat"><label for="mc1">One-Meat Plate</label></span>
+            <span class="chip"><input type="radio" name="meatCount" id="mc2" value="2 Meats"><label for="mc2">Two-Meat Plate</label></span>
+            <span class="chip"><input type="radio" name="meatCount" id="mc3" value="3 Meats"><label for="mc3">Three-Meat Plate</label></span>
+            <span class="chip"><input type="radio" name="meatCount" id="mc4" value="4 Meats"><label for="mc4">Four-Meat Plate</label></span>
+          </div>
+
+          <span class="chip-group-label">Pick Your Meats</span>
+          <div class="hint-note" id="meatHint"></div>
+          <div class="chip-group" id="meatGroup"></div>
+
+          <span class="chip-group-label">Other Plates We Offer <span class="optional" style="color:var(--text-muted); font-weight:400;">(beyond BBQ)</span></span>
+          <div class="chip-group" id="entreeGroup"></div>
+
+          <span class="chip-group-label">Sides</span>
+          <div class="chip-group" id="sideGroup"></div>
+
+          <span class="chip-group-label">Breads</span>
+          <div class="chip-group" id="breadGroup"></div>
+
+          <span class="chip-group-label">Desserts</span>
+          <div class="chip-group" id="dessertGroup"></div>
+
+          <span class="chip-group-label">Drinks</span>
+          <div class="chip-group" id="drinkGroup"></div>
+
+          <div class="chip-group">
+            <span class="chip"><input type="checkbox" id="qDrinkService" value="Tea or Lemonade service (+$1.50/person)"><label for="qDrinkService"><i class="fas fa-mug-hot"></i> Add Sweet Tea or Lemonade service (+$1.50/person — includes a server, cups, and plenty of ice)</label></span>
+          </div>
+
+          <div class="field-row single">
+            <div class="field">
+              <label for="qNotes">Special Requests, Allergies &amp; Anything Else</label>
+              <textarea id="qNotes" placeholder="Whole hog? Seafood boil? Crawfish étouffée? Allergies we should know about? Let us know — we'll accommodate any reasonable request."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-review" id="reviewBtn"><i class="fas fa-receipt"></i> Review My Catering Ticket</button>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      </div>
+
+      <!-- SUMMARY TICKET -->
+      <div class="quote-ticket-wrap">
+        <div class="quote-ticket" id="quoteTicket">
+          <div class="ticket-header">
+            <h4>Teague's BBQ</h4>
+            <p>Catering Quote Request</p>
+          </div>
+          <div class="ticket-body" id="ticketBody">
+            <p class="placeholder">Fill in your event details and click "Review My Catering Ticket" — your order summary will appear right here.</p>
+          </div>
+          <div class="ticket-note">
+            Thank you for your catering request. Final pricing may vary depending on your menu selections, headcount, service type, and event needs. Teague's BBQ will review everything and get back to you personally with a custom quote.
+          </div>
+          <div class="ticket-actions">
+            <a class="btn btn-primary" id="submitBtn" href="#"><i class="fas fa-paper-plane"></i> Send My Catering Request</a>
+            <a class="btn btn-dark-ghost" href="tel:8326063789"><i class="fas fa-phone"></i> Call Us</a>
+            <a class="btn btn-dark-ghost" href="#" onclick="alert('Online ordering is coming soon! Call us at (832) 606-3789 to place your order.'); return false;"><i class="fas fa-cart-shopping fa-shopping-cart"></i> Order Catering Online</a>
+          </div>
+          <div class="ticket-status" id="ticketStatus" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="twist-badge">🔥 The Pit's Already Lit 🔥</div>
+  <h2>Your Guests Will <br><span>Talk About This One</span></h2>
+  <p>Weddings, church suppers, office parties, backyard celebrations — whatever you're planning, let Teague's handle the food so you can enjoy your own party.</p>
+  <div class="final-cta-actions">
+    <a href="#quote" class="btn btn-primary"><i class="fas fa-clipboard-list"></i> Build My Free Quote</a>
+    <a href="tel:8326063789" class="btn btn-ghost"><i class="fas fa-phone"></i> Call (832) 606-3789</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Teague's BBQ — Texas Smoke, Cajun Soul &amp; Southern Hospitality | <a href="tel:8326063789" style="color:var(--gold); text-decoration:none;">(832) 606-3789</a> &nbsp;·&nbsp; <span style="color:var(--gold)">Website by DinePalace Marketing</span></p>
+  <p><i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> @TeaguesBBQ | Catering With A Twist | Proudly Serving Spring, TX &amp; Beyond</p>
+</footer>
+
+<!-- FLOATING ACTION BUTTONS -->
+<div class="float-actions">
+  <a href="#quote" class="float-btn float-btn-quote"><i class="fas fa-clipboard-list"></i> Get a Quote</a>
+  <a href="tel:8326063789" class="float-btn float-btn-call"><i class="fas fa-phone"></i> Call Now</a>
+</div>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+  // -------------------- MENU DATA --------------------
+  const entreesMain = [
+    { name: "Link Sausage", desc: "Jalape\u00F1o cheddar, hickory smoked \u2014 with a perfect snap", badge: "Popular", icon: "fas fa-hotdog" },
+    { name: "Pulled Pork", desc: "Slow-smoked for 14 hours and hand-pulled \u2014 incredibly tender", badge: "Signature", icon: "fas fa-drumstick-bite" },
+    { name: "Smoked Beef Brisket", desc: "Prime brisket, 16 hours over post oak \u2014 the pride of the pit", badge: "Pitmaster's Pride", icon: "fas fa-utensils" },
+    { name: "Pork Ribs", desc: "Fall-off-the-bone St. Louis style \u2014 napkins required", badge: "", icon: "fas fa-bone" },
+    { name: "Smoked Chicken", desc: "Brined overnight & pecan wood smoked", badge: "", icon: "fas fa-drumstick-bite" },
+    { name: "Smoked Turkey Breast", desc: "Juicy, hickory smoked \u2014 far beyond your average holiday turkey", badge: "", icon: "fas fa-feather" },
+    { name: "Specialty Meats", desc: "Venison, whole hog, lamb \u2014 just ask", badge: "Premium", icon: "fas fa-crown" }
+  ];
+  const otherPlates = ["Fried/Baked Pork Chops","Chicken Alfredo","Seafood Alfredo","Chicken Tetrazzini","Lasagna","Meatballs & Spaghetti","Meat Loaf","Shrimp or Crawfish \u00C9touff\u00E9e","Sauce Piquant","Pasta Jambalaya","Penne Pasta","Spaghetti Casserole","Seafood Boils","Fried Catfish","Fried or Baked Chicken"];
+  const sidesList = ["Potato Salad","Garden Salad","Pasta Salad","Collard Greens","Green Beans","Cabbage","Candied Yams","Baked Beans","Pinto Beans","Macaroni and Cheese","Seafood Dressing \u201CSpecial\u201D","Mixed Vegetables","Okra and Tomatoes","Dirty Rice"];
+  const breadsList = ["Dinner Rolls","Garlic Bread","Jalape\u00F1o Corn Bread","Sliced Bread"];
+  const dessertsList = ["Pound Cake","Banana Pudding","Pineapple Pudding","Buttermilk Pie","Peach Cobbler"];
+  const drinksList = ["Sweet Tea","Lemonade","Bottled Water"];
+
+  function renderIconCards(containerId, items, isObjectArray) {
+    let html = '';
+    if (isObjectArray) {
+      items.forEach(item => {
+        html += `
+          <div class="food-card">
+            <div class="card-icon">
+              <i class="${item.icon || 'fas fa-fire'}"></i>
+              ${item.badge ? `<div class="card-badge">${item.badge}</div>` : ''}
+            </div>
+            <div class="card-content">
+              <h4>${item.name}</h4>
+              <p>${item.desc}</p>
+              <div class="price-note">\u2726 CATERING PORTIONS \u2726</div>
+            </div>
+          </div>`;
+      });
+    } else {
+      items.forEach(name => {
+        let icon = "fas fa-utensils";
+        if (name.includes("Salad")) icon = "fas fa-leaf";
+        else if (name.includes("Bread") || name.includes("Rolls")) icon = "fas fa-bread-slice";
+        else if (name.includes("Cake") || name.includes("Pudding") || name.includes("Cobbler") || name.includes("Pie")) icon = "fas fa-cake-candles";
+        else if (name.includes("Tea") || name.includes("Lemonade") || name.includes("Water")) icon = "fas fa-glass-cheers";
+        html += `
+          <div class="food-card">
+            <div class="card-icon"><i class="${icon}"></i></div>
+            <div class="card-content">
+              <h4>${name}</h4>
+              <p>Made from scratch with quality ingredients</p>
+              <div class="price-note">\u2726 PERFECT FOR BUFFETS \u2726</div>
+            </div>
+          </div>`;
+      });
+    }
+    document.getElementById(containerId).innerHTML = html;
+  }
+
+  renderIconCards('entreesGrid', entreesMain, true);
+  let otherHtml = '';
+  otherPlates.forEach(p => {
+    otherHtml += `
+      <div class="food-card">
+        <div class="card-icon">
+          <i class="fas fa-utensils"></i>
+          <div class="card-badge">Chef's Pick</div>
+        </div>
+        <div class="card-content">
+          <h4>${p}</h4>
+          <p>Custom-made for large gatherings</p>
+        </div>
+      </div>`;
+  });
+  document.getElementById('otherPlatesGrid').innerHTML = otherHtml;
+  renderIconCards('sidesGrid', sidesList, false);
+  renderIconCards('breadsGrid', breadsList, false);
+  renderIconCards('dessertsGrid', dessertsList, false);
+  renderIconCards('drinksGrid', drinksList, false);
+
+  // -------------------- TABS --------------------
+  const sections = {
+    entrees: document.getElementById('entrees'),
+    sides: document.getElementById('sides'),
+    breads: document.getElementById('breads'),
+    desserts: document.getElementById('desserts'),
+    drinks: document.getElementById('drinks')
+  };
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category;
+      Object.values(sections).forEach(sec => sec.classList.remove('active-section'));
+      sections[cat].classList.add('active-section');
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
+  // -------------------- HERO CAROUSEL --------------------
+  const track = document.getElementById('heroTrack');
+  const slides = track.querySelectorAll('.carousel-slide');
+  const dotContainer = document.getElementById('heroDots');
+  let current = 0;
+  let interval;
+
+  function buildDots() {
+    dotContainer.innerHTML = '';
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.classList.add('carousel-dot');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      if (i === 0) dot.classList.add('active-dot');
+      dot.addEventListener('click', () => goTo(i));
+      dotContainer.appendChild(dot);
+    });
+  }
+  function goTo(index) {
+    current = index;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+      dot.classList.toggle('active-dot', i === current);
+    });
+    resetAuto();
+  }
+  function nextSlide() { goTo((current + 1) % slides.length); }
+  function resetAuto() { clearInterval(interval); interval = setInterval(nextSlide, 4500); }
+  buildDots();
+  resetAuto();
+
+  // -------------------- QUOTE FORM: build chip groups --------------------
+  const quoteMeats = ["Link Sausage","Pulled Pork","Smoked Beef Brisket","Pork Ribs","Chicken","Smoked Turkey Breast","Specialty Meat Request"];
+  const quoteEntrees = ["Fried or Baked Pork Chops","Chicken Alfredo","Seafood Alfredo","Chicken Tetrazzini","Lasagna","Meatballs and Spaghetti","Meat Loaf","Shrimp or Crawfish \u00C9touff\u00E9e","Sauce Piquant","Pasta Jambalaya","Penne Pasta","Spaghetti Casserole","Seafood Boils","Fried Fish","Fried or Baked Chicken"];
+  const quoteSides = ["Potato Salad","Garden Salad","Pasta Salad","Collard Greens","Green Beans","Cabbage","Candied Yams","Baked Beans","Pinto Beans","Macaroni and Cheese","Seafood Dressing","Mixed Vegetables","Okra and Tomatoes","Dirty Rice"];
+  const quoteBreads = ["Dinner Rolls","Garlic Bread","Jalape\u00F1o Corn Bread","Sliced Bread"];
+  const quoteDesserts = ["Pound Cake","Banana Pudding","Pineapple Pudding","Buttermilk Pie","Peach Cobbler"];
+  const quoteDrinks = ["Sweet Tea","Lemonade","Fruit Punch"];
+
+  function buildChips(containerId, items, groupName) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = items.map((item, i) => {
+      const id = groupName + '_' + i;
+      return `<span class="chip"><input type="checkbox" name="${groupName}" id="${id}" value="${item}"><label for="${id}">${item}</label></span>`;
+    }).join('');
+  }
+  buildChips('meatGroup', quoteMeats, 'meat');
+  buildChips('entreeGroup', quoteEntrees, 'entree');
+  buildChips('sideGroup', quoteSides, 'side');
+  buildChips('breadGroup', quoteBreads, 'bread');
+  buildChips('dessertGroup', quoteDesserts, 'dessert');
+  buildChips('drinkGroup', quoteDrinks, 'drink');
+
+  // -------------------- MEAT SELECTION LIMIT (based on plate option) --------------------
+  const meatHintWords = { 1: 'one meat', 2: 'two meats', 3: 'three meats', 4: 'four meats' };
+
+  function getMeatLimit() {
+    const el = document.querySelector('input[name="meatCount"]:checked');
+    if (!el) return null;
+    const n = parseInt(el.value, 10);
+    return isNaN(n) ? null : n;
+  }
+
+  function enforceMeatLimit() {
+    const limit = getMeatLimit();
+    const boxes = Array.from(document.querySelectorAll('input[name="meat"]'));
+    const hint = document.getElementById('meatHint');
+
+    if (!limit) {
+      boxes.forEach(b => { b.disabled = false; });
+      hint.textContent = 'Choose a plate option above first — that determines how many meats you can select.';
+      return;
+    }
+
+    // If they picked a smaller plate after selecting meats, keep only the first allowed picks
+    const checked = boxes.filter(b => b.checked);
+    if (checked.length > limit) {
+      checked.slice(limit).forEach(b => { b.checked = false; });
+    }
+
+    const checkedCount = boxes.filter(b => b.checked).length;
+    boxes.forEach(b => { b.disabled = !b.checked && checkedCount >= limit; });
+
+    const remaining = limit - checkedCount;
+    if (remaining > 0) {
+      hint.textContent = 'Your plate lets you pick ' + meatHintWords[limit] + ' — ' + remaining + ' pick' + (remaining === 1 ? '' : 's') + ' left.';
+    } else {
+      hint.textContent = 'All set — your ' + meatHintWords[limit] + ' ' + (limit === 1 ? 'is' : 'are') + ' selected. Change your plate option to pick more.';
+    }
+  }
+
+  document.querySelectorAll('input[name="meatCount"]').forEach(r => r.addEventListener('change', enforceMeatLimit));
+  document.querySelectorAll('input[name="meat"]').forEach(c => c.addEventListener('change', enforceMeatLimit));
+  enforceMeatLimit();
+
+  // -------------------- QUOTE SUMMARY --------------------
+  function getChecked(name) {
+    return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(el => el.value);
+  }
+  function val(id) { return document.getElementById(id).value.trim(); }
+
+  function formatDate(d) {
+    if (!d) return '';
+    const parts = d.split('-');
+    if (parts.length !== 3) return d;
+    const dt = new Date(parts[0], parts[1] - 1, parts[2]);
+    return dt.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  }
+  function formatTime(t) {
+    if (!t) return '';
+    const [h, m] = t.split(':');
+    const hour = parseInt(h, 10);
+    const ampm = hour >= 12 ? 'PM' : 'AM';
+    const h12 = hour % 12 || 12;
+    return `${h12}:${m} ${ampm}`;
+  }
+
+  function collectRequest() {
+    const meatCountEl = document.querySelector('input[name="meatCount"]:checked');
+    return {
+      firstName: val('qFirstName'),
+      lastName: val('qLastName'),
+      phone: val('qPhone'),
+      email: val('qEmail'),
+      company: val('qCompany'),
+      date: formatDate(val('qDate')),
+      time: formatTime(val('qTime')),
+      location: val('qLocation'),
+      eventType: val('qEventType'),
+      guests: val('qGuests'),
+      service: val('qService'),
+      servers: val('qServers'),
+      dinnerware: val('qDinnerware'),
+      meatCount: meatCountEl ? meatCountEl.value : '',
+      meats: getChecked('meat'),
+      entrees: getChecked('entree'),
+      sides: getChecked('side'),
+      breads: getChecked('bread'),
+      desserts: getChecked('dessert'),
+      drinks: getChecked('drink'),
+      drinkService: document.getElementById('qDrinkService').checked,
+      notes: val('qNotes')
+    };
+  }
+
+  function line(k, v) { return v ? `<div class="ticket-line"><span class="k">${k}</span><span class="v">${v}</span></div>` : ''; }
+  function list(k, arr) { return arr.length ? `<div class="ticket-list"><span class="k">${k}</span>${arr.join(', ')}</div>` : ''; }
+
+  let reviewedRequest = null;
+
+  document.getElementById('reviewBtn').addEventListener('click', () => {
+    const r = collectRequest();
+    const status = document.getElementById('formStatus');
+
+    if (!r.firstName || !r.lastName || !r.phone || !r.email || !r.guests || !r.date) {
+      status.textContent = "Almost there \u2014 we still need your first name, last name, phone, email, event date, and headcount so we can reach you.";
+      reviewedRequest = null;
+      return;
+    }
+    status.textContent = '';
+    reviewedRequest = r;
+
+    const fullName = r.firstName + ' ' + r.lastName;
+
+    let html = '';
+    html += line('First Name', r.firstName);
+    html += line('Last Name', r.lastName);
+    if (r.company) html += line('Organization', r.company);
+    html += line('Phone', r.phone);
+    html += line('Email', r.email);
+    html += line('Event', r.eventType || '\u2014');
+    html += line('Date', r.date + (r.time ? ' \u00B7 ' + r.time : ''));
+    if (r.location) html += line('Location', r.location);
+    html += line('Guests', r.guests);
+    if (r.service) html += line('Service', r.service);
+    if (r.servers) html += line('Servers needed', r.servers);
+    if (r.dinnerware) html += line('Plates & serving items', r.dinnerware);
+    if (r.meatCount) html += line('Plate selection', r.meatCount);
+    html += list('Meats', r.meats);
+    html += list('Other entr\u00E9es', r.entrees);
+    html += list('Sides', r.sides);
+    html += list('Breads', r.breads);
+    html += list('Desserts', r.desserts);
+    html += list('Drinks', r.drinks);
+    if (r.drinkService) html += line('Beverage service', 'Tea/Lemonade (+$1.50/person)');
+    if (r.notes) html += list('Notes', [r.notes]);
+
+    document.getElementById('ticketBody').innerHTML = html;
+
+    // Scroll the ticket into view on mobile
+    document.getElementById('quoteTicket').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  // -------------------- FORM SUBMISSION (FormSubmit) --------------------
+  const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/aashi@dinepalace.com';
+
+  function submitQuoteRequest(r) {
+    const ticketStatus = document.getElementById('ticketStatus');
+    const fullName = r.firstName + ' ' + r.lastName;
+
+    const fields = {
+      // FormSubmit configuration
+      _subject: "Catering Quote Request \u2014 " + fullName + " (" + r.guests + " guests)",
+      _template: "table",
+      _captcha: "false",
+      _replyto: r.email,
+      _next: window.location.origin + window.location.pathname + '?submitted=1#quote',
+      _autoresponse:
+        "Thank You for Your Quote Request\n\n" +
+        "Thank you for contacting Teague's BBQ!\n\n" +
+        "We have successfully received your quote request. Our team is reviewing your information and will contact you shortly to discuss your catering needs.\n\n" +
+        "We appreciate your interest in Teague's BBQ and look forward to serving you.\n\n" +
+        "Thank you,\n" +
+        "Teague's BBQ Team",
+      // Customer details
+      "First Name": r.firstName,
+      "Last Name": r.lastName,
+      email: r.email,
+      "Phone Number": r.phone,
+      "Organization": r.company || 'Not provided',
+      // Event details
+      "Event Type": r.eventType || 'Not specified',
+      "Event Date": r.date,
+      "Event Time": r.time || 'Not specified',
+      "Event Location": r.location || 'Not provided',
+      "Number of Guests": r.guests,
+      "Service Type": r.service || 'Not specified',
+      "Servers Needed": r.servers || 'Not specified',
+      "Plates & Serving Items": r.dinnerware || 'Not specified',
+      // Food selection
+      "Plate Selection": r.meatCount || 'Not specified',
+      "Meat Selection(s)": r.meats.length ? r.meats.join(', ') : 'None selected',
+      "Other Entrees": r.entrees.length ? r.entrees.join(', ') : 'None selected',
+      "Sides": r.sides.length ? r.sides.join(', ') : 'None selected',
+      "Breads": r.breads.length ? r.breads.join(', ') : 'None selected',
+      "Desserts": r.desserts.length ? r.desserts.join(', ') : 'None selected',
+      "Drinks": r.drinks.length ? r.drinks.join(', ') : 'None selected',
+      "Beverage Service": r.drinkService ? 'Yes \u2014 Tea/Lemonade (+$1.50/person)' : 'No',
+      "Additional Notes": r.notes || 'None'
+    };
+
+    ticketStatus.textContent = "Sending your request\u2026 one moment.";
+
+    // Build and submit a real POST form — most reliable path for FormSubmit
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = FORMSUBMIT_ENDPOINT;
+    form.style.display = 'none';
+    Object.keys(fields).forEach(function (key) {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = key;
+      input.value = fields[key];
+      form.appendChild(input);
+    });
+    document.body.appendChild(form);
+    form.submit();
+  }
+
+  // Show success message when returning from FormSubmit
+  if (new URLSearchParams(window.location.search).get('submitted') === '1') {
+    document.getElementById('ticketStatus').textContent = "Request sent! Check your email for confirmation \u2014 we'll be in touch shortly.";
+  }
+
+  document.getElementById('submitBtn').addEventListener('click', function (e) {
+    e.preventDefault();
+    if (!reviewedRequest) {
+      // Build/validate the request first if they haven't reviewed yet
+      document.getElementById('reviewBtn').click();
+      if (!reviewedRequest) return; // validation failed — message already shown
+    } else {
+      // Re-collect in case they changed anything after reviewing
+      reviewedRequest = collectRequest();
+      if (!reviewedRequest.firstName || !reviewedRequest.lastName || !reviewedRequest.phone || !reviewedRequest.email || !reviewedRequest.guests || !reviewedRequest.date) {
+        document.getElementById('reviewBtn').click();
+        return;
+      }
+    }
+    submitQuoteRequest(reviewedRequest);
+  });
+
+  // -------------------- BACK TO TOP --------------------
+  window.addEventListener('load', function () {
+    const btt = document.getElementById('backToTop');
+    if (btt) {
+      window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 500), { passive: true });
+      btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+  });
+</script>
 </body>
 </html>
