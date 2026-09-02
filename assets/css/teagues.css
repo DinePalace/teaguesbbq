@@ -248,8 +248,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; line-height
 
 /* ---------- logo + photo slots ---------- */
 .brand-link { display: inline-flex; }
-.brand-img { height: 54px; width: auto; display: block; }
-.foot-logo { height: 46px; width: auto; display: block; margin-bottom: 0.8rem; }
+.brand-img { height: 65px; width: auto; display: block; }
+.foot-logo { height: 55px; width: auto; display: block; margin-bottom: 0.8rem; }
 .pit-media { border-radius: 12px; overflow: hidden; aspect-ratio: 16/10; margin-bottom: 1.1rem; background: var(--char); }
 .pit-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
 .pit-card:hover .pit-media img { transform: scale(1.05); }
