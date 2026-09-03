@@ -18,18 +18,38 @@
 <meta name="theme-color" content="#17110d">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="/assets/css/teagues.css?v=2.2">
+<link rel="stylesheet" href="/assets/css/teagues.css?v=2.3">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <style>
 /* Category Filter Bar */
+.page-hero .container {
+  padding-block: clamp(1rem, 0.75rem + 1vw, 1.5rem) !important;
+}
+.page-hero .breadcrumb {
+  margin-bottom: 0.2rem;
+  font-size: 0.75rem;
+}
+.page-hero h1 {
+  font-size: clamp(2.2rem, 1.6rem + 2.4vw, 3.4rem);
+  line-height: 0.95;
+}
+.page-hero p {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  max-width: 54ch;
+}
+.gallery-section {
+  padding-top: clamp(0.9rem, 0.6rem + 0.8vw, 1.3rem) !important;
+  padding-bottom: clamp(2.5rem, 1.5rem + 3vw, 4.5rem) !important;
+}
 .gallery-filter-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
-  margin: 0 auto 2.2rem;
-  padding: 0.4rem;
+  margin: 0 auto 1.3rem;
+  padding: 0.2rem;
   max-width: 100%;
 }
 .gallery-filter-btn {
@@ -38,10 +58,10 @@
   color: var(--bark, #6b4a2f);
   font-family: var(--font-body, system-ui, sans-serif);
   font-weight: 700;
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 0.55rem 1.15rem;
+  padding: 0.48rem 1.05rem;
   border-radius: 999px;
   cursor: pointer;
   display: inline-flex;
@@ -122,7 +142,7 @@
     <h1>The <em>gallery</em></h1>
     <p>Real plates, seafood boils, catered spreads and the crew behind the pit — straight from Teague's in Spring, TX.</p>
   </div></section>
-  <section class="section"><div class="container">
+  <section class="section gallery-section"><div class="container">
     <nav class="gallery-filter-wrap reveal" aria-label="Gallery category filters">
       <button class="gallery-filter-btn active" data-filter="all"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4 4h7v7H4zm10 0h7v7h-7zM4 14h7v7H4zm10 0h7v7h-7z"/></svg> All <span class="count" id="count-all">21</span></button>
       <button class="gallery-filter-btn" data-filter="food"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2c1 3-1 4-1 6 0 1 1 2 2 2s2-1 2-3c2 2 3 4 3 7a6 6 0 1 1-12 0c0-3 2-5 3-6 1 2 2 2 2 1 0-2-1-3-1-4 0-3 2-5 3-6Z"/></svg> Food &amp; BBQ <span class="count" id="count-food">12</span></button>
@@ -174,7 +194,17 @@
       </div>
       <div>
         <h4>EXPLORE</h4>
-        <ul class="foot-links"><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/menu/">Menu</a></li><li><a href="/gallery/">Gallery</a></li><li><a href="/catering/">Catering</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://www.ezcater.com/catering/pvt/teagues-bbq-3?fcv=1" target="_blank" rel="noopener">Order Online</a></li></ul>
+        <ul class="foot-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/menu/">Menu</a></li>
+          <li><a href="/gallery/">Gallery</a></li>
+          <li><a href="/catering/">Catering Overview</a></li>
+          <li><a href="/the-woodlands-catering/">The Woodlands Catering</a></li>
+          <li><a href="/crawfish-boil-catering/">Crawfish Boil Catering</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="https://www.ezcater.com/catering/pvt/teagues-bbq-3?fcv=1" target="_blank" rel="noopener">Order Online</a></li>
+        </ul>
       </div>
       <div>
         <h4>FIND US</h4>
@@ -189,6 +219,6 @@
       <span>Website by DinePalace Marketing</span>
     </div>
   </div></footer>
-<script src="/assets/js/teagues.js?v=2.2" defer></script>
+<script src="/assets/js/teagues.js?v=2.3" defer></script>
 </body>
 </html>
