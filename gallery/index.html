@@ -16,8 +16,84 @@
 <meta name="theme-color" content="#17110d">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="/assets/css/teagues.css">
+<link rel="stylesheet" href="/assets/css/teagues.css?v=2.2">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<style>
+/* Category Filter Bar */
+.gallery-filter-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  margin: 0 auto 2.2rem;
+  padding: 0.4rem;
+  max-width: 100%;
+}
+.gallery-filter-btn {
+  background: var(--paper-hi, #fbf5ea);
+  border: 1px solid var(--line, #ddccb2);
+  color: var(--bark, #6b4a2f);
+  font-family: var(--font-body, system-ui, sans-serif);
+  font-weight: 700;
+  font-size: 0.84rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 2px 8px -2px rgba(20, 10, 4, 0.06);
+}
+.gallery-filter-btn svg {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  color: var(--ember, #e0611f);
+  transition: color 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.gallery-filter-btn:hover {
+  background: var(--paper-2, #ece0cb);
+  border-color: var(--ember, #e0611f);
+  color: var(--smoke, #17110d);
+  transform: translateY(-2px);
+}
+.gallery-filter-btn.active {
+  background: var(--ember, #e0611f) !important;
+  color: #fff !important;
+  border-color: var(--ember, #e0611f) !important;
+  box-shadow: 0 6px 20px -4px rgba(224, 97, 31, 0.55);
+  transform: translateY(-2px);
+}
+.gallery-filter-btn.active svg {
+  color: #fff !important;
+}
+.gallery-filter-btn .count {
+  font-size: 0.72rem;
+  font-weight: 800;
+  background: rgba(33, 24, 18, 0.08);
+  color: inherit;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+}
+.gallery-filter-btn.active .count {
+  background: rgba(255, 255, 255, 0.24) !important;
+  color: #fff !important;
+}
+.masonry figure.filter-hidden {
+  display: none !important;
+}
+.masonry figure.filter-show {
+  animation: filterFadeIn 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes filterFadeIn {
+  0% { opacity: 0; transform: scale(0.96); }
+  100% { opacity: 1; transform: scale(1); }
+}
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BarbecueRestaurant","name":"Teague's BBQ","url":"https://www.teaguesbbq.com","telephone":"+18322468552","priceRange":"$$","servesCuisine":["Barbecue","American","Texas"],"address":{"@type":"PostalAddress","streetAddress":"3307 Spring Stuebner Road, Suite B","addressLocality":"Spring","addressRegion":"TX","postalCode":"77389","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"11:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"18:00"}],"sameAs":["https://www.facebook.com/teaguesbbq/","https://instagram.com/teaguesbbq/"]}</script>
 </head>
 <body>
@@ -111,6 +187,6 @@
       <span>Website by DinePalace Marketing</span>
     </div>
   </div></footer>
-<script src="/assets/js/teagues.js" defer></script>
+<script src="/assets/js/teagues.js?v=2.2" defer></script>
 </body>
 </html>
